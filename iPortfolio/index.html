@@ -26,6 +26,53 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>$(document).ready(function () {
+    $('.details-link').on('click', function (event) {
+       event.preventDefault();
+       var href = $(this).attr('href');
+ 
+       $.ajax({
+          url: href,
+          type: 'GET',
+          dataType: 'html',
+          success: function (response) {
+             $('#main').html($(response).find('#main'));
+          },
+          error: function () {
+             console.log('Error loading content.');
+          }
+       });
+    });
+ });
+ </script>
+ <style>
+  /* Custom styles for the skill section */
+  .skills {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+  }
+
+  .skill-item {
+      margin-bottom: 10px;
+      position: relative;
+  }
+
+  .skill-item span {
+      background-color: #3498db; /* Change the color to your preference */
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      border: 1px solid #3498db; /* Add border to the skill box */
+  }
+  .python-icon {
+            width: 20px; /* Adjust the width as needed */
+            height: 20px; /* Adjust the height as needed */
+            margin-right: 5px; /* Add margin to separate the icon and text */
+        }
+</style>
 </head>
 
 <body>
@@ -180,6 +227,17 @@
         <div class="row skills-content">
 
           <div class="col-lg-6" data-aos="fade-up">
+            <!--new skils section-->
+            <div class="skills">
+              <div class="skill-item">
+                <span>
+                  <img src="assets/icons/python.svg" alt="Python Icon" class="python-icon">
+                  Python
+              </span>
+                  <span>JavaScript</span>
+              </div>
+              <!-- Add more skills as needed -->
+          </div>
 
             <div class="progress">
               <span class="skill">Python <i class="val">100%</i></span>
@@ -329,16 +387,16 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Projects</h2>
+          <p>List of Projects</p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-app">ML</li>
+              <li data-filter=".filter-card">Gen AI</li>
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
@@ -351,7 +409,7 @@
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="index.html" class="details-link" title="More Details" ><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -675,6 +733,6 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
 
+</body>
 </html>
