@@ -107,7 +107,29 @@
          
         #portfolio {
     display: none;
-}
+        }
+        .project-container {
+                    display: flex;
+            justify-content: space-between;
+            margin: 5px;
+        }
+
+        .project-box {
+            width: 30%; /* Adjust the width as needed */
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            display: inline-block;
+            border: 1px solid #d2e5f2;
+            
+        }
+        .project-link {
+            display: block; /* Make the link fill the entire project box */
+            font-size: 18px; /* Adjust the font size as needed */
+            font-weight: bold;
+            margin-bottom: 10px; /* Add some space between the link and project details */
+        }
         
 </style>
 </head>
@@ -464,7 +486,26 @@
 
         <div class="section-title">
           <h2>Projects</h2>
-          <p>List of Projects</p>
+          <div class="project-container">
+            <div class="project-box">
+              <h2>Project 2</h2>
+              <a href="https://github.com/akshayk122/Portfolio" class="project-link" target="_blank">Project 1 </a>
+                <p>Description of Project 1.</p>
+                <!--   <a href="https://github.com/your-username/project1" class="project-box" target="_blank">link</p>
+               Add more details or links as needed -->
+            </div>
+    
+            <div class="project-box">
+          
+                <p>Description of Project 2.</p>
+                <!-- Add more details or links as needed -->
+            </div>
+            <div class="project-box">
+              <h2>Project 3</h2>
+              <p>Description of Project 2.</p>
+              <!-- Add more details or links as needed -->
+          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -474,6 +515,7 @@
 
         <div class="section-title">
           <h2>Projects</h2>
+
           <p>List of Projects</p>
         </div>
 
