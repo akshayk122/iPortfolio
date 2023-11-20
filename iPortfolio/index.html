@@ -90,7 +90,7 @@
   }
   .skill-item-subitem
   {
-    border: 1px solid #fa171f;
+    border: 1px solid #2a42ba;
   }
   .python-icon {
             width: 40px; /* Adjust the width as needed */
@@ -104,6 +104,11 @@
             font-family: Arial, sans-serif;
             text-align: justify;
         }
+         
+        #portfolio {
+    display: none;
+}
+        
 </style>
 </head>
 
@@ -133,7 +138,7 @@
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-shield"></i> <span>Skills</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bxl-github"></i> <span>Projects</span></a></li>
+          <li><a href="#projects" class="nav-link scrollto"><i class="bx bxl-github"></i> <span>Projects</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Course</span></a></li>
           <li><a href="#others" class="nav-link scrollto"><i class="bx bx-link"></i> <span>Links</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -264,25 +269,23 @@
         
             <!--new skils section-->
             <div class="skills">
-
-              <div class="skill-item">
-                <span>
-                <h6><b>Front End</b></h6>
-                <span><img src="assets/icons/html-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
-                <span><img src="assets/icons/css3-01-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
-                <span><img src="assets/icons/javascript-file-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
-              </span>
-            </div>
-            <div class="skill-item">
-              <span>
-              <h5><b>Backend</b></h5>
-              <span><img src="assets/icons/mysql-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
-              <span><img src="assets/icons/oracle-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
-              <span><img src="assets/icons/oracle-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
-            </span>
-          </div>
-
-            <div class="skill-item">
+        
+          <div class="skill-item">
+            <span>
+            <h6><b>Front end</b></h6>
+            <span style="border: 1px solid #2a42ba;">HTML</span>
+            <span style="border: 1px solid #2a42ba;">CSS</span>
+            <span style="border: 1px solid #2a42ba;">JavaScript</span>
+          </span>
+        </div>
+        <div class="skill-item">
+          <span>
+          <h6><b>Backend</b></h6>
+          <span style="border: 1px solid #2a42ba;">C#</span>
+          <span style="border: 1px solid #2a42ba;">PHP</span>
+        </span>
+      </div>
+            <!--<div class="skill-item">
               <span>
               <h6><b>Database</b></h6>
               <span><img src="assets/icons/mysql-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
@@ -290,36 +293,41 @@
               <span><img src="assets/icons/mongodb-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
             </span>
           </div>
+        -->
 
           <div class="skill-item">
             <span>
-            <h5><b>AI</b></h5>
+            <h6><b>Database</b></h6>
+            <span style="border: 1px solid #2a42ba;">MySql</span>
+            <span style="border: 1px solid #2a42ba;">Oracle</span>
+            <span style="border: 1px solid #2a42ba;">MongoDB</span>
+          </span>
+        </div>
+
+          <div class="skill-item">
+            <span>
+            <h6><b>AI</b></h6>
             <span style="border: 1px solid #2a42ba;">ML</span>
-            <span style="border: 1px solid #fa171f;">DL</span>
-            <span style="border: 1px solid #fa171f;">NLP</span>
+            <span style="border: 1px solid #2a42ba;">DL</span>
+            <span style="border: 1px solid #2a42ba;">NLP</span>
           </span>
         </div>
               
         <div class="skill-item">
           <span>
-          <h5><b>Visualization</b></h5>
-          <span><img src="assets/icons/powerbi-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
-          <span><img src="assets/icons/tableau-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
+          <h6><b>Visualization</b></h6>
+          <span style="border: 1px solid #2a42ba;">PowerBI</span>
+          <span style="border: 1px solid #2a42ba;">Tableau</span>
         </span>
       </div>
           <div class="skill-item">
             <span>
-            <h5><b>Cloud</b></h5>
-            <span><img src="assets/icons/aws-svgrepo-com.svg" alt="Python Icon" class="python-icon"></span>
+            <h6><b>Others</b></h6>
+              <span style="border: 1px solid #2a42ba;">Python</span>
+              <span style="border: 1px solid #2a42ba;">AWS</span>
+            </span>
           </span>
         </div>
-          <div class="skill-item">
-            <span>
-            <h5><b>Python</b></h5>
-            <span><img src="assets/icons/python.svg" alt="Python Icon" class="python-icon"></span>
-          </span>
-         </div>
-
 
               <!-- Add more skills as needed -->
               <div class="col-lg-6" data-aos="fade-up">
@@ -451,7 +459,15 @@
 
       </div>
     </section><!-- End Resume Section -->
+    <section id="projects" class="portfolio section-bg">
+      <div class="container">
 
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>List of Projects</p>
+        </div>
+      </div>
+    </section>
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
