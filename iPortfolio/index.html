@@ -105,9 +105,10 @@
             text-align: justify;
         }
          
-        #portfolio {
+        #portfolio, #services, #others {
     display: none;
         }
+
         .project-container {
                     display: flex;
             justify-content: space-between;
@@ -129,6 +130,43 @@
             font-size: 18px; /* Adjust the font size as needed */
             font-weight: bold;
             margin-bottom: 10px; /* Add some space between the link and project details */
+        }
+
+
+         /* Project card styles */
+         .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 16px;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-image {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project-details {
+            padding: 16px;
+        }
+
+        .project-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .project-description {
+            font-size: 0.9em;
+            color: #666;
         }
         
 </style>
@@ -161,8 +199,8 @@
           <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-shield"></i> <span>Skills</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#projects" class="nav-link scrollto"><i class="bx bxl-github"></i> <span>Projects</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Course</span></a></li>
-          <li><a href="#others" class="nav-link scrollto"><i class="bx bx-link"></i> <span>Links</span></a></li>
+          <!--<li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Course</span></a></li>
+          <li><a href="#others" class="nav-link scrollto"><i class="bx bx-link"></i> <span>Links</span></a></li>-->
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -399,7 +437,7 @@
           <div class="col-lg-6" data-aos="fade-up">
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
-              <p style="text-align: justify;">Experienced Software Engineer with 4-years track record in dynamic software development I specialize in crafting software solutions that 
+              <p style="text-align: justify;">Experienced Software Engineer with 4-years track record in dynamic software development,I specialize in crafting software solutions that 
                 seamlessly merge business needs with an exceptional user experience. 
                 Collaborating across diverse teams throughout the software lifecycle, I ensure high-quality results that align with strategic objectives.</p>
               <ul>
@@ -487,23 +525,37 @@
         <div class="section-title">
           <h2>Projects</h2>
           <div class="project-container">
-            <div class="project-box">
-              <h2>Project 2</h2>
-              <a href="https://github.com/akshayk122/Portfolio" class="project-link" target="_blank">Project 1 </a>
-                <p>Description of Project 1.</p>
-                <!--   <a href="https://github.com/your-username/project1" class="project-box" target="_blank">link</p>
-               Add more details or links as needed -->
+            <div class="project-card">
+              <img class="project-image" src="assets/icons/aws-svgrepo-com.svg" alt="Project Image">
+              <div class="project-details">
+                  <div class="project-title">Project Title</div>
+                  <a href="https://github.com/akshayk122/Portfolio" class="project-link" target="_blank"><i class="bx bxl-github"></i> </a>
+                  <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+              </div>
             </div>
-    
-            <div class="project-box">
-          
-                <p>Description of Project 2.</p>
-                <!-- Add more details or links as needed -->
+          <div class="project-card">
+            <img class="project-image" src="assets/icons/deep-learning-svgrepo-com.svg" alt="Project Image">
+            <div class="project-details">
+                <div class="project-title">Project Title</div>
+                <a href="https://github.com/akshayk122/Portfolio" class="project-link" target="_blank"><i class="bx bxl-github"></i> </a>
+                <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             </div>
-            <div class="project-box">
-              <h2>Project 3</h2>
-              <p>Description of Project 2.</p>
-              <!-- Add more details or links as needed -->
+          </div>
+          <div class="project-card">
+            <img class="project-image" src="assets/icons/python.svg" alt="Project Image">
+            <div class="project-details">
+                <div class="project-title">Project Title</div>
+                <a href="https://github.com/akshayk122/Portfolio" class="project-link" target="_blank"><i class="bx bxl-github"></i> </a>
+                <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+          </div>
+          <div class="project-card">
+            <img class="project-image" src="assets/icons/python.svg" alt="Project Image">
+            <div class="project-details">
+                <div class="project-title">Project Title</div>
+                <a href="https://github.com/akshayk122/Portfolio" class="project-link" target="_blank"><i class="bx bxl-github"></i> </a>
+                <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
           </div>
         </div>
         </div>
